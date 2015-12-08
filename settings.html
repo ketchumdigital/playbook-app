@@ -1,0 +1,87 @@
+
+    <ons-page>
+      <ons-toolbar>
+      <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+        <div class="left"><ons-back-button>Account</ons-back-button></div>
+        <div class="center">Settings</div>
+      </ons-toolbar>
+
+      <ons-row class="profile-wrapper">
+        <ons-col width="60px" class="profile-image-wrapper">
+          <img src="images/profile-image-05.png" class="profile-image">
+        </ons-col>
+
+        <ons-col>
+          <div class="profile-name">Dave Graham</div>
+          <div class="profile-email">davegraham@example.com</div>
+        </ons-col>
+
+      </ons-row>
+
+      <div class="settings-header">Account</div>
+
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="chevron">
+          Change Password
+        </ons-list-item>
+        <ons-list-item modifier="chevron">
+          Configure MFA
+          <div class="notification menu-notification">1</div>
+        </ons-list-item>
+      </ons-list>
+
+
+      <div class="settings-header">App Content</div>
+
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item>
+          Update Content
+        </ons-list-item>
+
+        <ons-list-item>
+          Erase Local Data
+        </ons-list-item>
+      </ons-list>
+
+      <div class="settings-header">About</div>
+
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="chevron">
+          Terms of Use
+        </ons-list-item>
+
+        <ons-list-item modifier="chevron">
+          Privacy Policy
+        </ons-list-item>
+      </ons-list>
+
+            <div class="settings-header">Support</div>
+
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="chevron">
+          Help
+        </ons-list-item>
+        <ons-list-item modifier="chevron">
+          Report a Problem
+        </ons-list-item>
+        <ons-list-item modifier="chevron">
+          Send Feedback
+        </ons-list-item>
+      </ons-list>
+
+
+      <br>
+
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="tappable">
+          <ons-icon icon="ion-log-out" style="opacity: 0.8"></ons-icon>
+          Sign out
+        </ons-list-item>
+      </ons-list>
+
+
+    </ons-page>
