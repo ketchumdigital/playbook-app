@@ -1,0 +1,46 @@
+.brief-list {
+  border-top: none;
+  background-image: none !important;
+}
+
+.brief {
+  line-height: 1;
+  padding: 0;
+}
+
+.brief-left {
+  text-align: right;
+  padding: 10px 10px 10px 0;
+}
+
+.brief-center {
+  background-color: #3399ff;
+  opacity: 0.5;
+}
+
+.brief-right {
+  padding: 10px 40px 10px 10px;
+}
+
+.brief-date {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.brief-time {
+  font-size: 11px;
+  opacity: 0.4;
+}
+
+.brief-name {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.brief-info {
+  opacity: 0.4;
+  font-size: 12px;
+  line-height: 1.4;
+}

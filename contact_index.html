@@ -1,0 +1,87 @@
+
+
+    <!--ons-tabbar>
+      <ons-tab page="brief_list.html" active="true">
+        <ons-icon icon="ion-archive" class="tab-icon"></ons-icon>
+      </ons-tab>
+      <ons-tab page="brief_list.html">
+        <ons-icon icon="ion-trash-a" class="tab-icon"></ons-icon>
+      </ons-tab>
+    </ons-tabbar-->
+
+
+<ons-navigator title="Contacts" var="ContactsNavigator">
+  <ons-page>
+    <ons-toolbar>
+     <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+              <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+      </div>
+      <div class="center">Contacts</div>
+    </ons-toolbar>
+
+
+ <ons-list class="person-list">
+          <ons-list-header class="person-list-header">A</ons-list-header>
+          <ons-list-item class="person" modifier="chevron"  onclick="ContactsNavigator.pushPage('contact_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="40px">
+              <img src="images/profile-image-01.png" class="person-image">
+              </ons-col>
+              <ons-col class="person-name">
+                Abels, Jon
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+
+        <ons-list class="person-list">
+          <ons-list-header class="person-list-header">C</ons-list-header>
+          <ons-list-item class="person" modifier="chevron"   onclick="ContactsNavigator.pushPage('contact_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="40px">
+              <img src="images/profile-image-02.png" class="person-image">
+              </ons-col>
+              <ons-col class="person-name">
+                Caradine, Jennifer
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+
+        <ons-list class="person-list">
+          <ons-list-header class="person-list-header">T</ons-list-header>
+          <ons-list-item class="person" modifier="chevron"   onclick="ContactsNavigator.pushPage('contact_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="40px">
+              <img src="images/profile-image-03.png" class="person-image">
+              </ons-col>
+              <ons-col class="person-name">
+                Taylor, Ann
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+
+        <ons-list class="person-list">
+          <ons-list-header class="person-list-header">W</ons-list-header>
+          <ons-list-item class="person" modifier="chevron"   onclick="ContactsNavigator.pushPage('contact_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="40px">
+              <img src="images/profile-image-04.png" class="person-image">
+              </ons-col>
+              <ons-col class="person-name">
+                West, Thomas
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+        </ons-list>
+
+
+
+
+
+
+  </ons-page>
+</ons-navigator>
