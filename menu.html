@@ -2,18 +2,22 @@
             <ons-toolbar modifier="transparent"></ons-toolbar>
 
             <ons-list class="menu-list">
-                <ons-list-item class="menu-item" ng-click="menu.setMainPage('brief_index.html', {closeMenu: true})">
+                <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('home.html', {closeMenu: true})">
+                    <ons-icon icon="ion-home"></ons-icon>
+                    Home
+                </ons-list-item>
+                <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('brief_index.html', {closeMenu: true})">
                     <ons-icon icon="ion-briefcase"></ons-icon>
                     Briefs
                     <div class="notification menu-notification">2</div>
                 </ons-list-item>
 
-                <ons-list-item class="menu-item" ng-click="menu.setMainPage('contact_index.html', {closeMenu: true})">
+                <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('contact_index.html', {closeMenu: true})">
                     <ons-icon icon="ion-person-stalker"></ons-icon>
                     Contacts
                 </ons-list-item>
 
-                <ons-list-item class="menu-item" ng-click="menu.setMainPage('content_index.html', {closeMenu: true})">
+                <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('content_index.html', {closeMenu: true})">
                     <ons-icon icon="ion-ios-book"></ons-icon>
                     Crisis Handbook
                 </ons-list-item>
@@ -22,16 +26,16 @@
             <br>
 
             <ons-list class="bottom-menu-list">
-                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('settings.html', {closeMenu: true})">
+                <ons-list-item class="bottom-menu-item" ng-click="app.menu.setMainPage('settings.html', {closeMenu: true})">
                     Settings
                     <div class="notification menu-notification">1</div>
                 </ons-list-item>
 
-                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('help.html', {closeMenu: true})">
+                <ons-list-item class="bottom-menu-item" ng-click="app.menu.setMainPage('help.html', {closeMenu: true})">
                     Help
                 </ons-list-item>
 
-                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('feedback.html', {closeMenu: true})">
+                <ons-list-item class="bottom-menu-item" ng-click="app.menu.setMainPage('feedback.html', {closeMenu: true})">
                     Send feedback
                 </ons-list-item>
             </ons-list>

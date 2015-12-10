@@ -1,5 +1,4 @@
-
-    <ons-page>
+<ons-page>
       <ons-toolbar>
         <div class="center">Log In</div>
       </ons-toolbar>
@@ -9,9 +8,9 @@
         <input type="email" class="text-input--underbar" placeholder="Email" value="">
         <input type="password" class="text-input--underbar" placeholder="Password" value="">
         <br><br>
-        <ons-button modifier="large" class="login-button">Log In</ons-button>
+        <ons-button modifier="large" class="login-button" ng-click="app.navi.pushPage('home.html', { animation : 'fade' })">Log In</ons-button>
         <br><br>
-        <ons-button modifier="quiet" class="forgot-password">Forgot password?</ons-button>
+        <ons-button modifier="quiet" class="forgot-password" ng-click="app.navi.pushPage('login_reset.html', { animation : 'slide' })">Forgot password?</ons-button>
       </div>
 
     </ons-page>

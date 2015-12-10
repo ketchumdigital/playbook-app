@@ -10,6 +10,7 @@
     <script src="scripts/platformOverrides.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="scripts/controllers.js"></script>
 
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
@@ -34,7 +35,21 @@
     <title>Ketchum Playbook</title>
 
     <script>
+
         angular.module('app', ['onsen']);
+
+        app.controller('BriefsController', function($scope) {
+          ons.createPopover('briefs_menu.html').then(function(popover) {
+            $scope.popover = popover;
+            });
+        });
+
+        app.controller('ContentController', function($scope) {
+          ons.createPopover('content_menu.html').then(function(popover) {
+            $scope.popover = popover;
+            });
+        });
+
     </script>
 
     <style>
@@ -105,9 +120,12 @@
     <script src="scripts/index.js"></script>
     <!-- -->
 
-    <ons-sliding-menu menu-page="menu.html" main-page="home.html" side="left"
-                      var="menu" type="reveal" max-slide-distance="260px" swipeable="true">
-    </ons-sliding-menu>
+
+<ons-navigator animation="slide" title="Login" var="app.navi" page="login.html"></ons-navigator>
+
+
+
+
 
 
 

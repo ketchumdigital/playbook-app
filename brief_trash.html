@@ -1,22 +1,53 @@
 
 <ons-page>
 
+<ons-toolbar >
+     <div class="left">
+          <ons-toolbar-button ng-click="app.menu.toggle()">
+              <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+      </div>
+      <div class="center">Briefs Trash</div>
+      <div class="right">
+          <ons-toolbar-button >
+                Empty
+           </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
         <ons-list class="brief-list">
 
 
 
-          <ons-list-item modifier="chevron" class="brief">
+          <ons-list-item modifier="chevron" class="brief"  onclick="BriefsNavigator.pushPage('brief_item.html', { animation : 'slide' } )">
             <ons-row>
               <ons-col width="80px" class="brief-left">
                 <ons-icon icon="ion-document-text" size="28px"></ons-icon>
-                <div class="brief-time">5:30 PM</div>
-                <div class="brief-date">8/09/15</div>
+                <div class="brief-time">2:30 PM</div>
+                <div class="brief-date">5/09/15</div>
               </ons-col>
 
               <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
               </ons-col>
               <ons-col class="brief-right">
-                <div class="brief-name">NYC Conference</div>
+                <div class="brief-name">2015 Spring Brief</div>
+                <div class="brief-info">
+                    Executive Brief
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+          <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="80px" class="brief-left">
+                <ons-icon icon="ion-document-text" size="28px"></ons-icon>
+                <div class="brief-time">1:30 PM</div>
+                <div class="brief-date">4/25/15</div>
+              </ons-col>
+
+              <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
+              </ons-col>
+              <ons-col class="brief-right">
+                <div class="brief-name">April Briefing</div>
                 <div class="brief-info">
                     Executive Brief
                 </div>
@@ -24,18 +55,18 @@
             </ons-row>
           </ons-list-item>
 
-          <ons-list-item modifier="chevron" class="brief">
+          <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_agenda.html', { animation : 'slide' } )">
             <ons-row>
               <ons-col width="80px" class="brief-left">
                 <ons-icon icon="ion-calendar" size="28px"></ons-icon>
-                <div class="brief-time">5:15 PM</div>
-                <div class="brief-date">8/06/15</div>
+                <div class="brief-time">3:45 PM</div>
+                <div class="brief-date">4/06/15</div>
               </ons-col>
 
               <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
               </ons-col>
               <ons-col class="brief-right">
-                <div class="brief-name">NYC Visit Agenda</div>
+                <div class="brief-name">NYC 2015 Visit Agenda</div>
                 <div class="brief-info">
                     Communications Planning Calendar
                 </div>
@@ -43,31 +74,12 @@
             </ons-row>
           </ons-list-item>
 
-          <ons-list-item modifier="chevron" class="brief">
-            <ons-row>
-              <ons-col width="80px" class="brief-left">
-                <ons-icon icon="ion-document-text" size="28px"></ons-icon>
-                <div class="brief-time">12:30 PM</div>
-                <div class="brief-date">7/25/15</div>
-              </ons-col>
-
-              <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
-              </ons-col>
-              <ons-col class="brief-right">
-                <div class="brief-name">Digital Meetup Briefing</div>
-                <div class="brief-info">
-                    Executive Brief
-                </div>
-              </ons-col>
-            </ons-row>
-          </ons-list-item>
-
-          <ons-list-item modifier="chevron" class="brief">
+          <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_agenda.html', { animation : 'slide' } )">
             <ons-row>
               <ons-col width="80px" class="brief-left">
                 <ons-icon icon="ion-calendar" size="28px"></ons-icon>
                 <div class="brief-time">4:30 PM</div>
-                <div class="brief-date">11/10/15</div>
+                <div class="brief-date">2/10/15</div>
               </ons-col>
 
               <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
@@ -79,7 +91,97 @@
                 </div>
               </ons-col>
             </ons-row>
-          </ons-list-item>          
+          </ons-list-item>   
+           <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="80px" class="brief-left">
+                <ons-icon icon="ion-document-text" size="28px"></ons-icon>
+                <div class="brief-time">1:30 PM</div>
+                <div class="brief-date">1/25/15</div>
+              </ons-col>
+
+              <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
+              </ons-col>
+              <ons-col class="brief-right">
+                <div class="brief-name">April Briefing</div>
+                <div class="brief-info">
+                    Executive Brief
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+           <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="80px" class="brief-left">
+                <ons-icon icon="ion-document-text" size="28px"></ons-icon>
+                <div class="brief-time">1:30 PM</div>
+                <div class="brief-date">1/25/15</div>
+              </ons-col>
+
+              <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
+              </ons-col>
+              <ons-col class="brief-right">
+                <div class="brief-name">April Briefing</div>
+                <div class="brief-info">
+                    Executive Brief
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+           <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_item.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="80px" class="brief-left">
+                <ons-icon icon="ion-document-text" size="28px"></ons-icon>
+                <div class="brief-time">1:30 PM</div>
+                <div class="brief-date">1/25/15</div>
+              </ons-col>
+
+              <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
+              </ons-col>
+              <ons-col class="brief-right">
+                <div class="brief-name">January Briefing</div>
+                <div class="brief-info">
+                    Executive Brief
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item> 
+          <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_agenda.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="80px" class="brief-left">
+                <ons-icon icon="ion-calendar" size="28px"></ons-icon>
+                <div class="brief-time">3:45 PM</div>
+                <div class="brief-date">1/06/15</div>
+              </ons-col>
+
+              <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
+              </ons-col>
+              <ons-col class="brief-right">
+                <div class="brief-name">NYC 2015 Visit Agenda</div>
+                <div class="brief-info">
+                    Communications Planning Calendar
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>
+          <ons-list-item modifier="chevron" class="brief" onclick="BriefsNavigator.pushPage('brief_agenda.html', { animation : 'slide' } )">
+            <ons-row>
+              <ons-col width="80px" class="brief-left">
+                <ons-icon icon="ion-calendar" size="28px"></ons-icon>
+                <div class="brief-time">3:45 PM</div>
+                <div class="brief-date">1/06/15</div>
+              </ons-col>
+
+              <ons-col width="6px" class="brief-center" ng-style="{backgroundColor:'red' }">
+              </ons-col>
+              <ons-col class="brief-right">
+                <div class="brief-name">NYC 2015 Visit Agenda</div>
+                <div class="brief-info">
+                    Communications Planning Calendar
+                </div>
+              </ons-col>
+            </ons-row>
+          </ons-list-item>      
 
 
 

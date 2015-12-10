@@ -5,13 +5,13 @@
       </div>
       <div class="center">Page Title</div>
       <div class="right">
-          <ons-toolbar-button>
+          <ons-toolbar-button ng-click="popover.show($event);">
                         <ons-icon icon="ion-more" size="28px" fixed-width="false"></ons-icon>
            </ons-toolbar-button>
         </div>
     </ons-toolbar>
     <div style="text-align: center; margin-top: 100px;">
-      <ons-button modifier="light" onclick="CrisisNavigator.popPage()">
+      <ons-button modifier="light" onclick="ContentNavigator.popPage()">
         Pop Page
       </ons-button>
     </div>
