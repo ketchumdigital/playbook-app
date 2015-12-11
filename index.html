@@ -38,17 +38,6 @@
 
         angular.module('app', ['onsen']);
 
-        app.controller('BriefsController', function($scope) {
-          ons.createPopover('briefs_menu.html').then(function(popover) {
-            $scope.popover = popover;
-            });
-        });
-
-        app.controller('ContentController', function($scope) {
-          ons.createPopover('content_menu.html').then(function(popover) {
-            $scope.popover = popover;
-            });
-        });
 
     </script>
 

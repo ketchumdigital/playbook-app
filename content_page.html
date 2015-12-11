@@ -5,14 +5,81 @@
       </div>
       <div class="center">Page Title</div>
       <div class="right">
-          <ons-toolbar-button ng-click="popover.show($event);">
-                        <ons-icon icon="ion-more" size="28px" fixed-width="false"></ons-icon>
+          <ons-toolbar-button>
+                        <ons-icon icon="ion-chevron-up" size="28px" fixed-width="false"></ons-icon>
+           </ons-toolbar-button>
+           <ons-toolbar-button>
+                        <ons-icon icon="ion-chevron-down" size="28px" fixed-width="false"></ons-icon>
            </ons-toolbar-button>
         </div>
     </ons-toolbar>
-    <div style="text-align: center; margin-top: 100px;">
-      <ons-button modifier="light" onclick="ContentNavigator.popPage()">
-        Pop Page
-      </ons-button>
-    </div>
+<div class="page__content" >
+
+
+<!-- Identify : Gather Facts -->
+<h1>Gather Facts</h1>
+<h2>Use the list of questions below to gather critical details about the situation.</h2>
+<p>The answers to these questions combined with the <a href="#">Issues Triggers Checklist</a> will inform the communications strategy to be deployed by determining the severity of the situation and what information is still unknown. These questions also are listed under potential scenarios.</p>
+
+<ons-list>
+<ons-list-item class="title" ng-click=" ">What Happened?</ons-list-item>
+ <ons-list-item class="item-accordion">
+  <ul>
+    <li>What is the situation/accusation? What is the source of the information? Has it been confirmed?</li>
+    <li>When/where did this take place? At a California dairy?</li>
+  </ul>
+</ons-list-item>
+</ons-list>
+
+<ons-list>
+<ons-list-item class="title" ng-click=" ">What is the Severity of the Situation? </ons-list-item>
+ <ons-list-item class="item-accordion" >
+  <ul>
+    <li>Who is affected/involved? Any producers, cows? Is anyone injured or dead?</li>
+    <li>Are there any protests? Who is involved/organizing? What are their demands/calls to action?</li>
+    <li>Has there been activity on social media? By whom (individuals, groups or both)? What is the perceived level of influence/involvement of these commenters?</li>
+  </ul>
+</ons-list-item>
+</ons-list>
+
+<ons-list>
+<ons-list-item class="title" ng-click=" ">What Is the connection/impact to the California dairy industry?</ons-list-item>
+ <ons-list-item class="item-accordion">
+  <ul>
+    <li>Are any California dairies involved? Which ones/how many?</li>
+    <li>Are California dairies the focus of criticism? What is the source of the discussion/criticism? Where is this conversation taking place? Is it growing?</li>
+  </ul>
+</ons-list-item>
+</ons-list>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<ons-bottom-toolbar class="bottom-bar" style="z-index: 0;">
+<ons-toolbar-button>
+ <ons-icon icon="ion-printer" size="28px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="fa-file-pdf-o" size="24px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="ion-clipboard" size="28px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="ion-share" size="28px"></ons-icon>
+</ons-toolbar-button>
+
+
+</ons-bottom-toolbar>
+
+
+
   </ons-page>

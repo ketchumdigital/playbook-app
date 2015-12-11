@@ -5,14 +5,58 @@
       </div>
       <div class="center">Agenda Title</div>
       <div class="right">
-          <ons-toolbar-button ng-click="popover.show($event);">
-              <ons-icon icon="ion-more" size="28px" fixed-width="false"></ons-icon>
+          <ons-toolbar-button>
+                        <ons-icon icon="ion-chevron-up" size="28px" fixed-width="false"></ons-icon>
+           </ons-toolbar-button>
+           <ons-toolbar-button>
+                        <ons-icon icon="ion-chevron-down" size="28px" fixed-width="false"></ons-icon>
            </ons-toolbar-button>
         </div>
     </ons-toolbar>
-    <div style="text-align: center; margin-top: 100px;">
-      <ons-button modifier="light" onclick="BriefsNavigator.popPage()">
-        Pop Page
-      </ons-button>
+    
+
+<div class="page__content">
+
+
+
+
+
     </div>
+
+
+
+
+
+
+
+
+    <ons-bottom-toolbar class="bottom-bar" style="z-index: 0;">
+<ons-toolbar-button>
+ <ons-icon icon="ion-printer" size="28px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="fa-file-pdf-o" size="24px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="ion-clipboard" size="28px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="ion-share" size="28px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="ion-archive" size="28px"></ons-icon>
+</ons-toolbar-button>
+<ons-toolbar-button>
+ <ons-icon icon="ion-trash-b" size="28px"></ons-icon>
+</ons-toolbar-button>
+
+<ons-toolbar-button >
+ <ons-icon icon="ion-compose" size="28px"></ons-icon>
+</ons-toolbar-button>
+
+
+
+</ons-bottom-toolbar>
+
+
   </ons-page>
