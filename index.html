@@ -15,6 +15,7 @@
     <!-- CSS dependencies -->
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components-blue-basic-theme.css" />
+    <link rel="stylesheet" href="css/brief_item.css" />
     <link rel="stylesheet" href="css/contacts.css" />
     <link rel="stylesheet" href="css/content.css" />
     <link rel="stylesheet" href="css/feedback.css" />
@@ -37,6 +38,18 @@
     <script>
 
         angular.module('app', ['onsen']);
+
+
+        app.controller('briefsMenuController', function ($scope) {
+            ons.createPopover('briefs_menu.html').then(function (popover) {
+            $scope.popover = popover;
+            });
+        });
+        app.controller('contentMenuController', function ($scope) {
+            ons.createPopover('briefs_menu.html').then(function (popover) {
+            $scope.popover = popover;
+            });
+        });
 
 
     </script>
