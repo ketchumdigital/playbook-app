@@ -1,9 +1,13 @@
  <ons-page>
-      <ons-toolbar>
 
- <div class="right"><ons-toolbar-button onclick="app.navi.popPage()">Cancel</ons-toolbar-button></div>
-        <div class="center">New Message</div>
-      </ons-toolbar>
+<ons-toolbar>
+     <div class="left">
+        <ons-toolbar-button ng-click="app.menu.toggle()">
+          <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">Activate the Team</div>
+    </ons-toolbar>
 
       <ons-list modifier="inset" style="margin-top: 10px">
         <ons-list-item class="to-wrapper">
@@ -17,23 +21,17 @@
             </ons-col>
           </ons-row>
         </ons-list-item>
-        <ons-list-item>
-          <input type="text" class="text-input text-input--transparent" placeholder="Name" style="width: 100%">
-        </ons-list-item>
 
         <ons-list-item>
           <textarea class="textarea textarea--transparent" placeholder="Message" style="width: 100%; height: 100px;"></textarea>
         </ons-list-item>
 
-        <ons-list-item modifier="chevron">
-          <ons-icon icon="ion-paperclip" style="opacity:0.2"></ons-icon>
-        </ons-list-item>
 
       </ons-list>
 
       <div style="padding: 10px 9px">
         <ons-button modifier="large" style="margin: 0 auto;">
-          Send
+          Activate
         </ons-button>
       </div>
 
