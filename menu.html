@@ -7,20 +7,32 @@
                     Home
                 </ons-list-item>
                 <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('brief_index.html', {closeMenu: true})">
-                    <ons-icon icon="ion-briefcase"></ons-icon>
-                    Briefs
+                    <ons-icon icon="ion-email"></ons-icon>
+                    Messages
                     <div class="notification menu-notification">2</div>
                 </ons-list-item>
 
                 <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('contact_index.html', {closeMenu: true})">
                     <ons-icon icon="ion-person-stalker"></ons-icon>
-                    Contacts
+                    Comms Contacts
                 </ons-list-item>
 
-                <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('content_index.html', {closeMenu: true})">
-                    <ons-icon icon="ion-ios-book"></ons-icon>
-                    Crisis Handbook
+                <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('compose_message.html', {closeMenu: true})">
+                    <ons-icon icon="ion-alert-circled"></ons-icon>
+                    Activate the Team
                 </ons-list-item>
+
+                <ons-list-item class="menu-item" ng-click="app.menu.setMainPage('content_tab2.html', {closeMenu: true})">
+                    <ons-icon icon="ion-ios-book"></ons-icon>
+                    Playbook
+                </ons-list-item>
+
+                <ons-list-item class="menu-item">
+                    <ons-icon icon="ion-cube"></ons-icon>
+                    Walkthrough
+                </ons-list-item>
+
+                
             </ons-list>
 
             <br>
@@ -31,12 +43,6 @@
                     <!--div class="notification menu-notification">1</div-->
                 </ons-list-item>
 
-                <!--ons-list-item class="bottom-menu-item" ng-click="app.menu.setMainPage('help.html', {closeMenu: true})">
-                    Help
-                </ons-list-item-->
 
-                <!--ons-list-item class="bottom-menu-item" ng-click="app.menu.setMainPage('feedback.html', {closeMenu: true})">
-                    Send feedback
-                </ons-list-item-->
             </ons-list>
         </ons-page>
