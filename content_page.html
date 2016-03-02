@@ -1,16 +1,15 @@
 <ons-page>
-    <ons-toolbar>
+    <ons-toolbar ng-controller="contentMenuController">
       <div class="left">
         <ons-back-button>Back</ons-back-button>
       </div>
       <div class="center">Page Title</div>
       <div class="right">
-          <ons-toolbar-button>
-                        <ons-icon icon="ion-chevron-up" size="28px" fixed-width="false"></ons-icon>
-           </ons-toolbar-button>
-           <ons-toolbar-button>
-                        <ons-icon icon="ion-chevron-down" size="28px" fixed-width="false"></ons-icon>
-           </ons-toolbar-button>
+
+        <ons-toolbar-button ng-click="popover.show($event)">
+ <ons-icon icon="ion-ios-more" size="28px" fixed-width="false"></ons-icon>
+</ons-toolbar-button>
+         
         </div>
     </ons-toolbar>
 <div class="playbookcontent" >
@@ -67,10 +66,17 @@
 
 
 
-<ons-bottom-toolbar class="bottom-bar" style="z-index: 0;"  ng-controller="contentMenuController">
-<div class="left navigation-bar__left"><ons-toolbar-button ng-click="popover.show($event)">
- <ons-icon icon="ion-link" size="28px" fixed-width="false"></ons-icon>
-</ons-toolbar-button></div>
+<ons-bottom-toolbar class="bottom-bar" style="z-index: 0;"  >
+<div class="left navigation-bar__right">
+  
+ <ons-toolbar-button>
+                        <ons-icon icon="ion-chevron-up" size="28px" fixed-width="false"></ons-icon>
+           </ons-toolbar-button>
+           <ons-toolbar-button>
+                        <ons-icon icon="ion-chevron-down" size="28px" fixed-width="false"></ons-icon>
+           </ons-toolbar-button>
+
+</div>
 
 <!--div class="center navigation-bar__center">
   <ons-toolbar-button>
