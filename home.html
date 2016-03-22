@@ -1,12 +1,29 @@
 
 
-        <ons-page>
 
-    <ons-sliding-menu menu-page="menu.html" main-page="main.html" side="left"
-           var="app.menu" type="reveal" max-slide-distance="260px" swipeable="true">
+
+    <ons-sliding-menu main-page="menus.html" menu-page="menu.html" side="left" var="leftMenu" 
+		   type="reveal" max-slide-distance="260px" swipeable="true" 
+           ons-preopen="rightMenu.closeMenu();rightMenu.setSwipeable(false);" ons-postclose="rightMenu.setSwipeable(true);">
     </ons-sliding-menu>
 
 
            
 
-        </ons-page>
+
+
+
+
+<ons-template id="menus.html">
+
+  <ons-page>
+  <ons-sliding-menu main-page="main.html" menu-page="menu_right.html" side="right" max-slide-distance="40%" swipable="true" 
+  		type="reveal" var="rightMenu" ons-preopen="leftMenu.closeMenu();leftMenu.setSwipeable(false);" ons-postclose="leftMenu.setSwipeable(true);">
+  </ons-sliding-menu>
+  </ons-page>
+
+</ons-template>
+
+
+
+

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/brief_list.css" />
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/compose.css" />
+    <link rel="stylesheet" href="css/walkthrough.css" />
 
     <!-- CSP support mode (required for Windows Universal apps) -->
     <link rel="stylesheet" href="lib/angular/angular-csp.css" />
@@ -39,7 +40,6 @@
     <script>
 
         angular.module('app', ['onsen']);
-
 
 
 
@@ -121,12 +121,12 @@
 
 <body>
     <!-- Cordova reference -->
-    <script src="cordova.js"></script>
+    <!--script src="cordova.js"></script-->
     <script src="scripts/index.js"></script>
     <!-- -->
 
 
-<ons-navigator animation="slide" title="Login" var="app.navi" page="login.html"></ons-navigator>
+<ons-navigator title="Login" var="login" page="login.html"></ons-navigator>
 
 
 

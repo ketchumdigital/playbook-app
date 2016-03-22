@@ -5,9 +5,17 @@
       </div>
       <div class="center">Forgot Password</div>
     </ons-toolbar>
-    <div style="text-align: center; margin-top: 100px;">
-      <ons-button modifier="light" onclick="LoginNavigator.popPage()">
-        Pop Page
-      </ons-button>
-    </div>
+   <div class="login-form">
+
+        <input type="email" class="text-input--underbar" placeholder="Email" value="">
+<p> </p>
+        <br><br>
+        <ons-button modifier="large" class="login-button">Reset Password</ons-button>
+        <br><br>
+        <ons-button modifier="quiet" class="forgot-password" ng-click="login.popPage()">Login</ons-button>
+
+
+        <br><br>
+       
+      </div>
   </ons-page>

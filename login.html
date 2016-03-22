@@ -8,15 +8,15 @@
         <input type="email" class="text-input--underbar" placeholder="Email" value="">
         <input type="password" class="text-input--underbar" placeholder="Password" value="">
         <br><br>
-        <ons-button modifier="large" class="login-button" ng-click="app.navi.pushPage('home.html', { animation : 'fade' })">Log In</ons-button>
+        <ons-button modifier="large" class="login-button" ng-click="login.pushPage('home.html', { animation : 'fade' })">Log In</ons-button>
         <br><br>
-        <ons-button modifier="quiet" class="forgot-password" ng-click="app.navi.pushPage('login_reset.html', { animation : 'slide' })">Forgot password?</ons-button>
+        <ons-button modifier="quiet" class="forgot-password" ng-click="login.pushPage('login_reset.html', { animation : 'slide' })">Forgot password?</ons-button>
         <br><br>
        
       </div>
 
 <ons-bottom-toolbar>
-   <ons-button modifier="large" class="login-button" ng-click="app.navi.pushPage('contact_login.html', { animation : 'lift' })">Comms Contacts</ons-button>
+   <ons-button modifier="large" class="login-button" ng-click="login.pushPage('contact_login.html', { animation : 'lift' })">Comms Contacts</ons-button>
 </ons-bottom-toolbar>
 
     </ons-page>
